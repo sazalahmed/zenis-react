@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    @apply bg-white font-body;
+}
+
+@theme {
+    --color-primary: #ffa500;
+    --color-secondary: #0A69D8;
+    --color-green: #05A845;
+    --color-olive: #AB9774;
+    --color-yellow: #FFD43A;
+    --color-paraColor: #7d7b7b;
+    --color-blacklack: #333333;
+    --color-white: #ffffff;
+    --color-rating: #F9A61C;
+    --color-lightBg: #F5F5F5;
+    --color-borderColor: #e5e5e5;
+    --font-heading: "Jost", serif;
+    --font-body: "Roboto", serif;
+    --font-cursive: "Oregano", serif;
+    /* --boxShadow: rgb(149 157 165 / 16%) 0px 3px 22px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-heading text-black font-bold;
+}
+
+.common_btn {
+    /* @apply bg-primary text-white font-medium py-3 px-6 rounded-md hover:bg-secondary ease-in-out duration-300; */
+}
+
+.para {
+    @apply text-paraColor text-base;
+}
