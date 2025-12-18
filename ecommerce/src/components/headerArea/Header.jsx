@@ -6,14 +6,14 @@ import { VscCallOutgoing } from "react-icons/vsc";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between  gap-10 w-[1600px] m-auto py-5">
+    <header className="flex items-center justify-between gap-10 w-[1600px] m-auto py-5">
       <Link to="/" className="block, w-[130px]">
         <img className="w-[130px]" src={logo} />
       </Link>
 
-      <div className="flex items-center columns-xl gap-5 bg-lightBg rounded-full py-1 pl-5 border border-borderColor w-2xl">
+      <div className="flex items-center gap-5 bg-lightBg rounded-full py-1 pl-5 border border-borderColor w-2xl">
         <div className="category border-r border-borderColor py-2 pr-5">
-          <select className="text-sm color-paraColor outline-none w-[150px]">
+          <select className="text-sm color-paraColor outline-none cursor-pointer w-[150px]">
             <option value="#">All Categories</option>
             <option value="#">Fashion</option>
             <option value="#">Elentronics</option>
@@ -36,6 +36,7 @@ const Header = () => {
           </button>
         </form>
       </div>
+
       <div className="flex items-center gap-3">
         <div className="relative pl-13 mr-10">
           <span className="w-[40px] h-[40px] flex justify-center items-center rounded-full border-2 border-borderColor absolute top-[3px] left-[0px]">
@@ -49,16 +50,18 @@ const Header = () => {
             +(402) 763 282 467
           </a>
         </div>
-        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none cursor-pointer px-2 py-3 w-[110px]">
-          <select className="w-full">
+
+        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none px-2 py-3 w-[110px]">
+          <select className="w-full outline-none cursor-pointer">
             <option>English</option>
             <option>Arabic</option>
             <option>Hindi</option>
             <option>Chinese</option>
           </select>
         </div>
-        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none cursor-pointer px-2 py-3 w-[90px]">
-          <select className="w-full">
+
+        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none px-2 py-3 w-[90px]">
+          <select className="w-full outline-none cursor-pointer">
             <option>$USD</option>
             <option>€EUR</option>
             <option>¥JPY</option>
