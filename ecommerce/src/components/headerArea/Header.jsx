@@ -6,7 +6,7 @@ import { VscCallOutgoing } from "react-icons/vsc";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between gap-10 w-[1600px] m-auto py-5">
+    <header className="container flex items-center justify-between gap-10 mx-auto py-5">
       <Link to="/" className="block, w-[130px]">
         <img className="w-[130px]" src={logo} />
       </Link>
