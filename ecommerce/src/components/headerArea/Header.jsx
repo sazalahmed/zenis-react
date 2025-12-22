@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="container flex items-center justify-between gap-10 mx-auto py-5">
       <Link to="/" className="block, w-32.5">
-        <img className="w-full" src={logo} />
+        <img className="w-full" src={logo} alt="Logo" />
       </Link>
 
       <div className="flex items-center gap-5 bg-lightBg rounded-full py-1 pl-5 border border-borderColor w-2xl">
