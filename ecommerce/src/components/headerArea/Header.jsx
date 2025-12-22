@@ -7,13 +7,13 @@ import { VscCallOutgoing } from "react-icons/vsc";
 const Header = () => {
   return (
     <header className="container flex items-center justify-between gap-10 mx-auto py-5">
-      <Link to="/" className="block, w-[130px]">
-        <img className="w-[130px]" src={logo} />
+      <Link to="/" className="block, w-32.5">
+        <img className="w-full" src={logo} />
       </Link>
 
       <div className="flex items-center gap-5 bg-lightBg rounded-full py-1 pl-5 border border-borderColor w-2xl">
         <div className="category border-r border-borderColor py-2 pr-5">
-          <select className="text-sm color-paraColor outline-none cursor-pointer w-[150px]">
+          <select className="text-sm color-paraColor outline-none cursor-pointer w-37.5">
             <option value="#">All Categories</option>
             <option value="#">Fashion</option>
             <option value="#">Elentronics</option>
@@ -30,7 +30,7 @@ const Header = () => {
           ></input>
           <button
             type="submit"
-            className="w-[37px] h-[37px] rounded-full bg-black text-white flex justify-center items-center cursor-pointer text-xl absolute top-[1px] right-[5px] ease-linear duration-300 hover:bg-primary color:black"
+            className="w-9.25 h-9.25 rounded-full bg-black text-white flex justify-center items-center cursor-pointer text-xl absolute top-px right-1.25 ease-linear duration-300 hover:bg-primary color:black"
           >
             <FiSearch />
           </button>
@@ -39,7 +39,7 @@ const Header = () => {
 
       <div className="flex items-center gap-3">
         <div className="relative pl-13 mr-10">
-          <span className="w-[40px] h-[40px] flex justify-center items-center rounded-full border-2 border-borderColor absolute top-[3px] left-[0px]">
+          <span className="w-10 h-10 flex justify-center items-center rounded-full border-2 border-borderColor absolute top-0.75 left-0">
             <VscCallOutgoing />
           </span>
           <p className="text-sm text-paraColor">Hotline:</p>
@@ -51,7 +51,7 @@ const Header = () => {
           </a>
         </div>
 
-        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none px-2 py-3 w-[110px]">
+        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none px-2 py-3 w-27.5">
           <select className="w-full outline-none cursor-pointer">
             <option>English</option>
             <option>Arabic</option>
@@ -60,7 +60,7 @@ const Header = () => {
           </select>
         </div>
 
-        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none px-2 py-3 w-[90px]">
+        <div className="text-sm color-paraColor bg-lightBg rounded-lg outline-none px-2 py-3 w-22.5">
           <select className="w-full outline-none cursor-pointer">
             <option>$USD</option>
             <option>€EUR</option>

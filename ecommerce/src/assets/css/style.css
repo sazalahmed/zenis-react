@@ -15,7 +15,7 @@ body {
     --color-olive: #AB9774;
     --color-yellow: #FFD43A;
     --color-paraColor: #7d7b7b;
-    --color-blacklack: #333333;
+    --color-black: #333333;
     --color-white: #ffffff;
     --color-rating: #F9A61C;
     --color-lightBg: #F5F5F5;
@@ -23,7 +23,6 @@ body {
     --font-heading: "Jost", serif;
     --font-body: "Roboto", serif;
     --font-cursive: "Oregano", serif;
-    /* --boxShadow: rgb(149 157 165 / 16%) 0px 3px 22px; */
 }
 
 h1,
@@ -36,7 +35,7 @@ h6 {
 }
 
 .common_btn {
-    /* @apply bg-primary text-white font-medium py-3 px-6 rounded-md hover:bg-secondary ease-in-out duration-300; */
+    @apply bg-primary text-white text-[15px] font-medium rounded-lg px-6.5 py-3 flex items-center gap-1 hover:bg-black ease-in-out duration-300
 }
 
 .para {

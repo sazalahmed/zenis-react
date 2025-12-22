@@ -1,9 +1,14 @@
 import React from "react";
+import MenuCategory from "./components/MenuCategory";
+import HeroSlider from "./components/HeroSlider";
+import HeroAdd from "./components/HeroAdd";
 
 const Home = () => {
   return (
-    <div>
-      <h1>This Is Home Page</h1>
+    <div className="container mx-auto flex justify-between">
+      <MenuCategory />
+      <HeroSlider />
+      <HeroAdd />
     </div>
   );
 };

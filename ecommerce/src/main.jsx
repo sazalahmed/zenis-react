@@ -9,6 +9,11 @@ import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Product from "./pages/product/Product";
+import Cart from "./pages/cart/Cart";
+import Compare from "./pages/Compare/Compare";
+import Wishlist from "./pages/wishlist/Wishlist";
+import FlashSell from "./pages/flashSell/FlashSell";
+import ProductDetails from "./pages/productDetails/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +24,12 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/blog", element: <Blog /> },
       { path: "/contact", element: <Contact /> },
-      { path: "/shop", element: <Product /> },
+      { path: "/product", element: <Product /> },
+      { path: "/product-details", element: <ProductDetails /> },
+      { path: "/cart", element: <Cart /> },
+      { path: "/compare", element: <Compare /> },
+      { path: "/wishlist", element: <Wishlist /> },
+      { path: "/flashsell", element: <FlashSell /> },
     ],
   },
 ]);
