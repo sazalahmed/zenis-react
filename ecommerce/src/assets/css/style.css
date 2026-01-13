@@ -8,6 +8,12 @@ body {
     @apply bg-white font-body;
 }
 
+img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
 @theme {
     --color-primary: #ffa500;
     --color-secondary: #0A69D8;
@@ -40,4 +46,92 @@ h6 {
 
 .para {
     @apply text-paraColor text-base;
+}
+
+.view_all_btn {
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    font-family: var(--headingFont);
+    position: relative;
+    padding-right: 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.view_all_btn:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.view_all_btn::after {
+    position: absolute;
+    content: "";
+    background: url(..//images/arrow_icon_black.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 15px;
+    top: 4px;
+    right: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.view_all_btn:hover::after {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(38%) saturate(6159%) hue-rotate(358deg) brightness(98%) contrast(108%);
+    -webkit-filter: brightness(0) saturate(100%) invert(83%) sepia(38%) saturate(6159%) hue-rotate(358deg) brightness(98%) contrast(108%);
+}
+
+.section_heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_heading h3,
+.section_heading h3 span {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--colorBlack);
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.section_heading h3 span::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 75px;
+    background: url(../images/heading_shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -10px;
+    left: -7px;
+    z-index: -1;
+    opacity: 1;
+}
+
+.category_item:hover .img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.category_item:hover h2 {
+    color: var(--color-primary);
 }
